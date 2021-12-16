@@ -6,6 +6,10 @@ public class StateMachineSolver
 
     public string? Solve(IList<Vertex> vertices, string[] input, string start)
     {
+        foreach(var s in input){
+            Console.Write(s);
+        }
+        Console.Write($" {start}\n");
         if (input.Length == 0)
         {
             return start;
